@@ -1,0 +1,105 @@
+body {
+    font-family: Gotham;
+    text-align: center;
+    background-color: #003399;
+    color: white;
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Brice;
+    font-weight: normal;
+    font-style: normal;
+    src: url("./assets/Brice-Regular.otf");
+}
+
+@font-face {
+    font-family: Brice;
+    font-weight: bold;
+    font-style: normal;
+    src: url("./assets/Brice-Bold.otf");
+}
+
+@font-face {
+    font-family: Gotham;
+    font-weight: normal;
+    font-style: normal;
+    src: url("./assets/Gotham-Medium.otf");
+}
+
+@font-face {
+    font-family: Gotham;
+    font-weight: 300;
+    font-style: normal;
+    src: url("./assets/Gotham-Light.otf");
+}
+
+@font-face {
+    font-family: Gotham;
+    font-weight: bold;
+    font-style: normal;
+    src: url("./assets/Gotham-Bold.otf");
+}
+
+.brand-name {
+    font-family: Brice;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile-picture {
+    object-fit: cover;
+}
+
+.links #wpp-btn {
+    background-color: #25d366;
+    font-weight: bold;
+}
+
+.links #wpp-btn:hover {
+    background-color: #dcf8c6;
+    color: #202020
+}
+
+.links a {
+    display: block;
+    background-color: #2552f2;
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1em;
+    border: 2px solid #021e58;
+}
+
+.links a:hover {
+    background-color: #7a8af4;
+    transition: all 0.18s ease;
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 95%;
+        padding: 10px;
+    }
+
+    .links a {
+        font-size: 1em;
+        padding: 12px;
+    }
+}
