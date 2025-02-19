@@ -61,12 +61,17 @@ body {
 }
 
 .navbar {
-    display: flex;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "Back Title Title Title .";
     align-items: flex-end;
     justify-content: space-between;
     background-color: #021e58;
     color: white;
-    padding: 15px 20px;
+    padding: 15px 0px;
     font-family: Gotham, sans-serif;
     font-weight: bold;
     position: fixed;
@@ -80,13 +85,19 @@ body {
     font-size: 1.2em;
 }
 
-.navbar .back {
+.navbar .nav-back {
+    grid-area: Back;
     font-size: 1.5em;
     cursor: pointer;
     width: 50px;
 }
 
-.navbar .back:hover {
+.nav-title {
+    grid-area: Title;
+    font-size: 22px;
+}
+
+.navbar .nav-back:hover {
     color: #ec7198;
     transition: color 0.18s ease;
 }
