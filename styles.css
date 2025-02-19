@@ -1,57 +1,52 @@
+@font-face {
+    font-family: Brice;
+    font-style: bold;
+    font-display: swap;
+    src: url("./assets/Brice-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Gotham;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url("./assets/Gotham-Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Gotham;
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    src: url("./assets/Gotham-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Gotham;
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url("./assets/Gotham-Bold.otf") format("opentype");
+}
+
 body {
     font-family: Gotham;
     text-align: center;
     background-color: #003399;
     color: white;
-    padding: 20px;
     margin: 0;
     font-weight: 300;
-}
-
-@font-face {
-    font-family: Brice;
-    font-weight: normal;
-    font-style: normal;
-    src: url("./assets/Brice-Regular.otf");
-}
-
-@font-face {
-    font-family: Brice;
-    font-weight: bold;
-    font-style: normal;
-    src: url("./assets/Brice-Bold.otf");
-}
-
-@font-face {
-    font-family: Gotham;
-    font-weight: normal;
-    font-style: normal;
-    src: url("./assets/Gotham-Medium.otf");
-}
-
-@font-face {
-    font-family: Gotham;
-    font-weight: 300;
-    font-style: normal;
-    src: url("./assets/Gotham-Light.otf");
-}
-
-@font-face {
-    font-family: Gotham;
-    font-weight: bold;
-    font-style: normal;
-    src: url("./assets/Gotham-Bold.otf");
-}
-
-.brand-name {
-    font-family: Brice;
-    font-weight: bold;
 }
 
 .container {
     max-width: 400px;
     margin: auto;
     padding: 20px;
+}
+
+.brand-name {
+    font-family: Brice;
+    font-weight: bold;
 }
 
 .profile img {
@@ -65,41 +60,132 @@ body {
     object-fit: cover;
 }
 
-.links #wpp-btn {
+.navbar {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: #021e58;
+    color: white;
+    padding: 15px 20px;
+    font-family: Gotham, sans-serif;
+    font-weight: bold;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.navbar .back {
+    font-size: 1.5em;
+    cursor: pointer;
+    width: 50px;
+}
+
+.navbar .back:hover {
+    color: #ec7198;
+    transition: color 0.18s ease;
+}
+
+.navbar-margin {
+    margin-top: 40px;
+}
+
+.links a {
+    display: block;
+    background-color: #EC7198;
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 1em;
+    border: 2px solid #021e58;
+    font-weight: 400;
+}
+
+.links a:hover {
+    background-color: #F4B3CB;
+    transition-property: background-color, color; 
+    transition-duration: 0.18s; 
+    transition-timing-function: ease; 
+}
+
+#wpp-btn {
     background-color: #25d366;
     font-weight: bold;
 }
 
 .links #wpp-btn:hover {
     background-color: #dcf8c6;
-    color: #202020
+    color: #202020;
 }
 
-.links a {
-    display: block;
-    background-color: #2552f2;
-    color: white;
+.workshop-card {
+    background-color: #ec7198;
+    color: #021e58;
     padding: 15px;
+    border-radius: 10px;
     margin: 10px 0;
-    text-decoration: none;
-    border-radius: 50px;
-    font-size: 1em;
+    text-align: center;
+    font-weight: normal;
     border: 2px solid #021e58;
 }
 
-.links a:hover {
+.workshop-card>h2 {
+    margin: 0;
+}
+
+.workshop-card>p {
+    margin-top: 0.4em;
+}
+
+.workshop-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.workshop-buttons>a {
+    background-color: #2552f2;
+    color: white;
+    padding: 0.3em 1em;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 300;
+    border: 2px solid #021e58;
+}
+
+.workshop-buttons>a:hover {
     background-color: #7a8af4;
-    transition: all 0.18s ease;
+    transition: background-color 0.18s ease;
+}
+
+.workshop-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 1.5px solid #021e58;
 }
 
 @media (max-width: 480px) {
     .container {
         max-width: 95%;
-        padding: 10px;
+        padding: 15px;
     }
 
-    .links a {
+    .links a,
+    .workshop-buttons>a {
         font-size: 1em;
         padding: 12px;
+    }
+
+    .fix-workshop-title {
+        font-size: 20px;
     }
 }
