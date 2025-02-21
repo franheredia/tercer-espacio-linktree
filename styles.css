@@ -61,12 +61,12 @@ body {
 }
 
 .navbar {
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      "Back Title Title Title .";
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "Back Title Title Title .";
     align-items: flex-end;
     justify-content: space-between;
     background-color: #021e58;
@@ -98,7 +98,7 @@ body {
 }
 
 .navbar .nav-back:hover {
-    color: #ec7198;
+    color: #EC7198;
     transition: color 0.18s ease;
 }
 
@@ -115,36 +115,36 @@ body {
     text-decoration: none;
     border-radius: 20px;
     font-size: 1em;
-    border: 2px solid #021e58;
+    border: 2px solid #021E58;
     font-weight: 400;
 }
 
 .links a:hover {
     background-color: #F4B3CB;
-    transition-property: background-color, color; 
-    transition-duration: 0.18s; 
-    transition-timing-function: ease; 
+    transition-property: background-color, color;
+    transition-duration: 0.18s;
+    transition-timing-function: ease;
 }
 
 #wpp-btn {
-    background-color: #25d366;
+    background-color: #25D366;
     font-weight: bold;
 }
 
 .links #wpp-btn:hover {
-    background-color: #dcf8c6;
+    background-color: #DCF8C6;
     color: #202020;
 }
 
 .workshop-card {
-    background-color: #ec7198;
+    background-color: #EC7198;
     color: #021e58;
     padding: 15px;
     border-radius: 10px;
     margin: 10px 0;
     text-align: center;
     font-weight: normal;
-    border: 2px solid #021e58;
+    border: 2px solid #021E58;
 }
 
 .workshop-card>h2 {
@@ -162,17 +162,17 @@ body {
 }
 
 .workshop-buttons>a {
-    background-color: #2552f2;
+    background-color: #2552F2;
     color: white;
     padding: 0.3em 1em;
     border-radius: 10px;
     text-decoration: none;
     font-weight: 300;
-    border: 2px solid #021e58;
+    border: 2px solid #021E58;
 }
 
 .workshop-buttons>a:hover {
-    background-color: #7a8af4;
+    background-color: #7A8Af4;
     transition: background-color 0.18s ease;
 }
 
@@ -181,7 +181,7 @@ body {
     height: 100px;
     object-fit: cover;
     border-radius: 100%;
-    border: 1.5px solid #021e58;
+    border: 2px solid #021E58;
 }
 
 @media (max-width: 480px) {
