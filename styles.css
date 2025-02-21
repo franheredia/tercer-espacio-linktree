@@ -126,13 +126,17 @@ body {
     transition-timing-function: ease;
 }
 
-.social-media-icon > svg {
+.box-shadow {
+    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.4);
+}
+
+.social-media-icon>svg {
     height: 45px;
     fill: #EC7198;
     transition: fill 0.18s ease;
 }
 
-.social-media-icon > svg :hover {
+.social-media-icon>svg :hover {
     fill: #F4B3CB;
 }
 
@@ -192,6 +196,18 @@ body {
     object-fit: cover;
     border-radius: 100%;
     border: 2px solid #021E58;
+}
+
+.floating-btn-container {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    justify-items: center;
+}
+
+.floating-btn-container>.links {
+    width: 80%;
+    max-width: 300px;
 }
 
 @media (max-width: 480px) {
