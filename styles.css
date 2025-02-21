@@ -198,16 +198,13 @@ body {
     border: 2px solid #021E58;
 }
 
-.floating-btn-container {
-    width: 100%;
-    position: fixed;
-    bottom: 0px;
-    justify-items: center;
-}
-
-.floating-btn-container>.links {
+.floating-btn {
     width: 80%;
     max-width: 300px;
+    position: fixed;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
 }
 
 @media (max-width: 480px) {
