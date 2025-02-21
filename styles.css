@@ -39,7 +39,7 @@ body {
 }
 
 .container {
-    max-width: 400px;
+    max-width: 800px;
     margin: auto;
     padding: 20px;
 }
@@ -103,7 +103,7 @@ body {
 }
 
 .navbar-margin {
-    margin-top: 40px;
+    margin-top: 42px;
 }
 
 .links a {
