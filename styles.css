@@ -126,6 +126,16 @@ body {
     transition-timing-function: ease;
 }
 
+.social-media-icon > svg {
+    height: 45px;
+    fill: #EC7198;
+    transition: fill 0.18s ease;
+}
+
+.social-media-icon > svg :hover {
+    fill: #F4B3CB;
+}
+
 #wpp-btn {
     background-color: #25D366;
     font-weight: bold;
