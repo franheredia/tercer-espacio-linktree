@@ -148,6 +148,10 @@ a {
     font-weight: bold;
 }
 
+.secondary-content-button {
+    background-color: #6f8de1 !important;
+}
+
 .links #wpp-btn:hover {
     background-color: #DCF8C6;
     color: #202020;
