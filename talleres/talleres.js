@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
     workshops.forEach(workshopData => {
         const { title, img, description, phone, infoUrl } = workshopData;
         const wppMessage = encodeURI(`Hola! Me interesa el taller de ${title} que dan en Tercer Espacio`);
-        console.log(infoUrl);
 
         container.innerHTML += `
             <div class="workshop-card">
