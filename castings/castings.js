@@ -1,14 +1,5 @@
 const completeCastings = [
     {
-        title: "Rol Adolecente - Corto Universitario",
-        gender: "female",
-        fisic: "Actriz que aparente 14-16 años",
-        description: "Para filmar una escena de 2 minutos aprox. Remunerado + viáticos",
-        phone: "5493512129555",
-        requiredInfo: "fotos de cuerpo completo y de rostro",
-        infoUrl: ""
-    },
-    {
         title: "Niña - Corto Universitario",
         gender: "female",
         fisic: "Aparentar 11 años, Cabello castaño lacio, Ojos marrones",
